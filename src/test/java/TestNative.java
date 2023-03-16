@@ -32,5 +32,7 @@ public class TestNative extends BaseClass {
        settingObject.selectSpeed("km");
          settingObject.buttonDoneClick();
          settingObject.selectTimeFormat(true);
+         settingObject.buttonDoneClick();
+         settingObject.setNotification(true);
     }
 }
