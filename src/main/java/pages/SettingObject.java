@@ -84,8 +84,10 @@ public class SettingObject {
     }
 
 
-    public void clickMenu(){
-        driver.findElement(By.xpath(SettingsField.MENU)).click();
+    public void clickMenu() throws InterruptedException {
+        Thread.sleep(3000);
+        driver.findElementByXPath(SettingsField.MENU).click();
+
     }
     public void setNotification(boolean b) {
         MobileElement mobileElement = (MobileElement) driver.findElementById(notification);
